@@ -1,0 +1,132 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background:#30323c;
+    
+}
+
+div 
+{
+    color: white;
+}
+* 
+{
+    margin: 0;
+}
+
+.tagName
+{
+    height: 150%;
+    width: 60%;
+    padding: 0% 2%;
+    border-radius: 5px;
+}
+
+.comments
+{
+    height: 150%;
+    width: 60%;
+    padding: 0% 2%;
+    border-radius: 5px;
+}
+
+
+
+.button {
+    background-color: #b82a2a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+#selfInfoBoundBox
+{
+    margin-top:50px;
+    border: 2px solid orangered;
+    padding: 5% 0%;
+    border-radius: 5px;
+}
+
+.selfInfo
+{
+    width: 70%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.mainHeading
+{
+    margin-top: 50px;   
+}
+p
+{
+    font-size: 25px;
+}
+
+.whitehr
+{
+    background: orangered;
+    height: 1.4%;
+    border-radius: 2px;
+}
+
+.box
+{
+    border: 2px solid orangered;
+    border-radius: 5px;
+    padding: 5% 0%;
+}
+
+.box hr 
+{
+    background: white;
+    width: 70%;
+}
+
+#info 
+{
+    font-size: 95%;
+    font-weight: bold;
+}
+
+#selfInfoDesc
+{
+    line-height: 150%;
+}
+
+.trash
+{
+    height: 120%;
+    right: 13%;
+    top: 20%;
+    transform: traslateY(-50%);
+    position: absolute;
+}
+
+#rankHead 
+{
+    position: absolute;
+    
+}
+
+.ranks
+{
+    position: absolute;
+    left: 4%;
+    height: 125%;
+    width: 12%;
+    border-radius: 5px;
+    background: white;
+}

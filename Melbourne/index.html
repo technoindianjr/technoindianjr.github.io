@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <title>City of Melbourne</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10" align="center">
+                <h1 class="mainHeading">MELBOURNIANS PARTICIPATE</h1>
+                <hr class="whitehr">
+                <br>
+                <div class="box">
+                    <p>Tell us what concerns you the most in this election.</p>
+                    <hr>
+                    <p>Select concerns from the list below, by clicking and/ or entering your own #tags (maximum 5 in total).</p>
+                </div>
+                <br>
+                <p id="info">Feel free to delete, re-select from list, enter your own #tag, and add comment, if any. Finally, click the RED SUBMIT button.</p>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <form id="form1">
+            <div class="row" align="center" style="margin-top:30px;">
+                
+                <div class="col-md-6" style="margin-top:30px;">
+                    <h2 id="rankHead">Ranks</h2>
+                    <h2>Tags</h2>
+                </div>
+                <div class="col-md-6 .d-none .d-md-block .d-lg-none" style="margin-top:30px">
+                    <h2>Comments</h2>
+                </div>
+                <div class="col-sm-6" style="margin-top:30px;">
+                    <select name="tag1rank" id="tag1rank" class="ranks">
+                        <option value="" selected>N/A</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <input list="tags" name="tag1" id="tag1" name="tag1" class="tagName" placeholder="Hashtag1">
+                </div>
+                <div class="col-sm-6" style="margin-top:30px">
+                    <input type="text" class="comments" id="comment1" name="comment1" placeholder="Comments">
+                    <img src="Images/trash.svg" id="1" alt="clear" onclick="ClearContent(this.id)" class="trash">
+                </div>
+                
+                <div class="col-sm-6" style="margin-top:30px;">
+                    <select name="tag2rank" id="tag2rank" class="ranks">
+                        <option value="" selected>N/A</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <input list="tags" name="tag2" id="tag2" name="tag2" class="tagName" placeholder="Hashtag2">
+                </div>
+                <div class="col-sm-6" style="margin-top:30px;">
+                    <input type="text" class="comments" id="comment2" name="comment2" placeholder="Comments">
+                    <img src="Images/trash.svg" id="2" alt="clear" onclick="ClearContent(this.id)" class="trash">
+                </div>
+                <div class="col-sm-6" style="margin-top:30px;">
+                    <select name="tag3rank" id="tag3rank" class="ranks">
+                        <option value="" selected>N/A</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <input list="tags" name="tag3" id="tag3" name="tag3" class="tagName" placeholder="Hashtag3">
+                </div>
+                <div class="col-sm-6" style="margin-top:30px;">
+                    <input type="text" class="comments" id="comment3" name="comment3" placeholder="Comments">
+                    <img src="Images/trash.svg" id="3" alt="clear" onclick="ClearContent(this.id)" class="trash">
+                </div>
+                <div class="col-sm-6" style="margin-top:30px;">
+                    <select name="tag4rank" id="tag4rank" class="ranks">
+                        <option value="" selected>N/A</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <input list="tags" name="tag4" id="tag4" class="tagName" name="tag4" placeholder="Hashtag4">
+                </div>
+                <div class="col-sm-6" style="margin-top:30px;">
+                    <input type="text" class="comments" id="comment4" name="comment4" placeholder="Comments">
+                    <img src="Images/trash.svg" id="4" alt="clear" onclick="ClearContent(this.id)" class="trash">
+                </div>
+                <div class="col-sm-6" style="margin-top:30px;">
+                    <select name="tag5rank" id="tag5rank" class="ranks">
+                        <option value="" selected>N/A</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <input list="tags" name="tag5" id="tag5" class="tagName" name="tag5" placeholder="Hashtag5">
+                </div>
+                <div class="col-sm-6" style="margin-top:30px;">
+                    <input type="text" class="comments" id="comment5" name="comment5" placeholder="Comments">
+                    <img src="Images/trash.svg" id="5" alt="clear" onclick="ClearContent(this.id)" class="trash">
+                </div>
+
+                <datalist id="tags" class="tagList" name="tagList">
+                    <option value="#MaintainsUrbanBiosphere">
+                    <option value="#CaptureAndRescueStormWater">
+                    <option value="#DesignForAndByPeople">
+                    <option value="#DigitalTransformationOfCouncilBureacrats">
+                    <option value="#NewAreasOfEmployment">
+                    <option value="#PropertyPrice">
+                    <option value="#CovidOutbreakGuardRegulation">
+                    <option value="#CitizenParticipationInDirectDemocracy">
+                    <option value="#AffordableCommunityFacilitiesAndServices">
+                    <option value="#SupportHomeless">
+                    <option value="#CreativeValue">
+                    <option value="#E-learningPolicies">
+                    <option value="#CyclistFriendlyCity">
+                    <option value="#AffordablePublicTransport">
+                    <option value="#EnableCitizenEngagementWithNewTechnology">
+                    <option value="#OpenupGovernmentData">
+                    <option value="#CityCleanness">
+                    <option value="#MoreHotspot">
+                    <option value="#AcknowledgeAboriginalIdentity">
+                    <option value="#MoreMinorityRights">
+                </datalist>
+                <datalist id="ranks" class="rankList" name="rankList">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                </datalist>
+            </div>
+        
+            <div id="selfInfoBoundBox">
+                <div class="row" align="center">
+                
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        
+                        <h4 id="selfInfoDesc">Optionally, you can provide your name and a valid email id if you like my #tag leaders to involve you in developing the themes further.</h4>
+                        <br>
+                    </div>
+                    <div class="col-sm-6">
+                         <center>
+                            <h4>
+                                Name
+                            </h4>
+                            <br>
+                            <input type="text" id="fname" name="fname" class="selfInfo" placeholder="Name"><br>
+                         </center>
+                    </div>
+                    <div class="col-sm-6">
+                        <center>
+                            <h4>Email</h4>
+                            <br>
+                            <input type="text" id="email" name="email" class="selfInfo" placeholder="Email"><br>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" align="center">
+                <div class="col-md-12">
+                    <br>
+                    <br>
+                    
+                    <br>
+                    <button class="button" type="submit" form="form1" value="Submit">Submit</button>
+                    <br>
+                    <br>
+                    
+                    <br>
+                </div>
+            </div>
+        </form>
+    </div>
+<script src="index.js"></script>
+<script>
+    $(".tagName").blur(function() {
+        var hashTag = $(this).val();
+        var tagLength = $('.tagName').length;
+        var id = this.id;
+        for (var i = 1 ; i<tagLength+1; i++)
+        {
+            if(id != ("tag"+i))
+            {
+                var link = $("#tag"+i).val();
+                if(hashTag == link && link!="") {
+                    alert("This #tag is already chosen.");
+                    $(this).val("");
+                }
+            }
+            
+        }
+    });
+
+</script>
+</body>
+</html>
